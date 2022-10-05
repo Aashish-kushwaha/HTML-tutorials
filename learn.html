@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML forms</h1>
+    <form action="thanku.html" method='GET'>
+        <label for="username">username:</label>
+        <input type="text" id="username" name='username' placeholder="username" required>
+        <br><br>
+
+        <label for="password">password:</label>
+        <input type="text" id="password" name='password' placeholder="password" required> 
+        <br><br> 
+
+        <label for="email">email:</label>
+        <input type="text" id="email" name='email' placeholder="enter email" required>
+        <br>
+
+
+        <p>select your gender</p>
+        <label for="male">Male:</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <br><br>
+
+        <label for="female">Female:</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <br><br>
+
+        <label for="other">other:</label>
+        <input type="radio" name="gender" id="other" value="other">
+        <br><br>
+
+        <label for="age-group">Select your age</label>
+        <select name="age group values" id="age-group">
+            <option value="5-10">5-10</option>
+             <option value="10-15">10-15</option>
+             <option value="15-20">15-20</option>
+             <option value="20-250">20-25</option>
+        </select>
+             
+
+
+        <br><br>
+        <input type="submit" value="sign in">
+
+
+        <p><b>comment below</b></p>
+        <textarea name="" id="" cols="30" rows="10" placeholder="type here"></textarea>
+        <br>
+        <label for="">pick color: </label>
+        <input type="color" name="" >
+        <br>
+
+        date:  <input type="date">
+        <br> 
+        <input type="file">
+    </form>
+</body>
+</html>

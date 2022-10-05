@@ -1,0 +1,11 @@
+in html we use tags
+<!doctype html>=this tag is used to tell the browerser that it is html document  shortcut(! and enter)
+<html>=structure of html document
+<head>=title of website
+<body>=body of webpage
+<h1>,<h2>,<h3>,<h4>,<h5>,<h6>=heading deni ho tho
+<p>=used to make paragraph
+<br>= it is open tag used to shft line to new line
+<a href="link of other webpage/website>hyper link word</a>
+<a href="./link of other webpage/website"target"The target attribute specifies where to open the linked document">hyper link word</a>=(./) is used to go to webpage in  next folder
+<a href="../link of other webpage/website">hyper link word</a>=(../)is used to go in webpage inprevious folder

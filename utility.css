@@ -1,0 +1,14 @@
+body{
+    color:green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#heading{
+    color: yellow;
+}
+.text-red{
+    color: red;
+}
+
+.text-green{
+    color: blue
+}

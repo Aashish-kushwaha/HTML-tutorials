@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,500&family=Whisper&display=swap');
+body{
+    font-family:'Roboto', sans-serif;
+    font-family: 'Whisper', cursive;
+}
+.mainheader{
+    background-color: yellow;
+}
+.main-section{
+    background-color: yellow;
+}
+.secondary{
+    color: green;
+}
+span{
+    background-color: blue;
+}
+.h1class{
+    font-family: 'Times New Roman', Times, serif;
+}
