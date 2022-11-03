@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html> <!-- doctype help browser to understand the vesrion of HTML the document is written, for better interpretablilty.-->
+<html lang="en"> <!--opens the page no markup sould come after closing this tab, the lan attribute declares the primary language of the page using the ISO code-->
+<head> <!--opens the head section which does not appear in the main browser window but mainly contains the data about the HTML document called metadata also contains the external imports such as style sheet and scripts-->
     <meta charset="UTF-8">
+    <!--meta gives some information about  the HML document. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="this is toyurial">
-    <title>everything</title>
+    <title>everything</title> <!--title of the page displayed on the tab of the page -->
 </head>
 <body>
     <!--heading used in HTML-->
@@ -40,8 +41,19 @@
              Possimus numquam placeat, quia harum nisi nostrum nemo ratione
              <br> 
              tenetur dolorum voluptates!</pre>
-             <!--links-->
+             <!--ANCHORS AND HYPERLINKS-->
+             <!--
+                href: specifies the destination address. it can be an absolute or relative URL,ot the name of the anchpr,absolute addrees is the link of some website like http://exaple.com . a relative URL points to the directory or documents inside the same documents,
+                rel:specifies the relationship between the current document and the linked document.                
+                target: specifies wher to open link e.g new tab or same windowpossible values are _balnk,_self,_parent, _top.
+                download:specifies that the target will be downloaded when a user clicks on the hyperlinks
+             -->
+             <!--LINK TO ANOTHER SITE-->
              <a href="https://google.co.in" target="_blank">google link</a>
+             <br>
+             <!--ANCHOR: Anchors can be used to jump to speccific tags on a HTML page, usually used to visit the subsection of the page-->
+             <!--link to -->
+             <a href=""></a>
              <!--image insertion-->
              <img src="img2.jpg" alt="taj mahal" height="300" width="300" >
     </p>
@@ -59,10 +71,25 @@
     <em>italic text</em>
     or
     <i>use i</i>
+    <br>
     <!-- UNDERLINED TEXT -->
     <u>this text is under lined</u>
     <br>
+    <!--ABBREVATIION-->
     <abbr title="hypertext markup language">HTML</abbr>
-
+    <br>
+    <!--INSERTED TEXT-->
+    <ins>inserted text</ins>
+    <!--DELETED TEXT:defines text that has been delected from the documnet.browser will alays strike a line through deleted text.-->
+    <del>deleted text</del>
+    <br>
+    <!--STRIKEN:this tag specifies text that no longer correct or accirate, text will be displayed with a line through it. -->
+    <s>strike through text</s>
+    <br>
+    <!--superscript:the offset text upword-->
+    2<sup>3</sup>
+    <br>
+    <!--superscript:the offset text upword-->
+    2<sub>3</sub>
 </body>
 </html>
