@@ -1,5 +1,6 @@
 <!DOCTYPE html> <!-- doctype help browser to understand the vesrion of HTML the document is written, for better interpretablilty.-->
 <html lang="en"> <!--opens the page no markup sould come after closing this tab, the lan attribute declares the primary language of the page using the ISO code-->
+
 <head> <!--opens the head section which does not appear in the main browser window but mainly contains the data about the HTML document called metadata also contains the external imports such as style sheet and scripts-->
     <meta charset="UTF-8">
     <!--meta gives some information about  the HML document. -->
@@ -10,8 +11,15 @@
     <title>everything</title> <!--title of the page displayed on the tab of the page -->
 </head>
 <body>
+
+    <nav>
+        <a href="#1">go to 1</a>
+        <br>
+        <a href="#2">go to 2</a>
+    </nav>
+
     <!--heading used in HTML-->
-    <h1>heading1</h1>
+    <h1 id="1">heading1</h1>
     <h2>heading</h2>
     <h3>heading</h3>
     <h4>heading</h4>
@@ -20,10 +28,9 @@
 
 
     <!--paragraph-->
-    <!-- <p>: defines a paragraph
-        <br: inserts a single line break
-
-        <pre>: defines preformatted text the text will be displayed exactly as written in the HTML source code. -->
+    <!-- <p> : defines a paragraph
+         <br  : inserts a single line break
+         <pre>: defines preformatted text the text will be displayed exactly as written in the HTML source code. -->
     <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 
@@ -33,6 +40,7 @@
 
         Quasi saepe voluptatum odio iste dicta? Placeat perferendis ipsam 
         sequi mollitia officia.
+
         <!--hr tag is  used draw horizontal line-->
          <hr size="10" color="red">
 
@@ -40,7 +48,9 @@
              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
              Possimus numquam placeat, quia harum nisi nostrum nemo ratione
              <br> 
-             tenetur dolorum voluptates!</pre>
+             tenetur dolorum voluptates!
+        </pre>
+
              <!--ANCHORS AND HYPERLINKS-->
              <!--
                 href: specifies the destination address. it can be an absolute or relative URL,ot the name of the anchpr,absolute addrees is the link of some website like http://exaple.com . a relative URL points to the directory or documents inside the same documents,
@@ -48,12 +58,31 @@
                 target: specifies wher to open link e.g new tab or same windowpossible values are _balnk,_self,_parent, _top.
                 download:specifies that the target will be downloaded when a user clicks on the hyperlinks
              -->
+
              <!--LINK TO ANOTHER SITE-->
              <a href="https://google.co.in" target="_blank">google link</a>
              <br>
-             <!--ANCHOR: Anchors can be used to jump to speccific tags on a HTML page, usually used to visit the subsection of the page-->
-             <!--link to -->
-             <a href=""></a>
+
+             <!--ANCHOR: Anchors can be used to jump to speccific tags on a HTML page, usually used to visit the subsection of the page.whe we have several section we may want to cretae a table of contents at the top of the page with quick links to specific section.
+            ->we give ID attribute to the section or topics to see example go to start of the page-->
+             <br>
+
+             <!--link to a page on the same site-->
+             <a href="/everything.html">tab here</a>
+             <br>
+
+             <!--download some file -->
+             <a href="html-5.png" download>download img</a>
+             <br>
+             
+             <!--email to -->
+             <a href="mailto:email@gmail.com?cc=ashu@gmail.com&bcc=kiran@gmail.com&subject=related to HTML&body=this mail is regarding the course of html that you have to complete">my email</a>
+
+             <br>
+             <!--telephone number-->
+             <a href="tel:456789765489">phone</a>
+             <br>
+
              <!--image insertion-->
              <img src="img2.jpg" alt="taj mahal" height="300" width="300" >
     </p>
@@ -67,29 +96,229 @@
     <p>
     <strong>either use strong</strong> or use <b>b</b>
     <br>
+
     <!-- ITALIC TEXT -->
     <em>italic text</em>
     or
     <i>use i</i>
     <br>
+
     <!-- UNDERLINED TEXT -->
     <u>this text is under lined</u>
     <br>
-    <!--ABBREVATIION-->
+
+    <!--ABBREVIATIION-->
     <abbr title="hypertext markup language">HTML</abbr>
     <br>
+
     <!--INSERTED TEXT-->
     <ins>inserted text</ins>
-    <!--DELETED TEXT:defines text that has been delected from the documnet.browser will alays strike a line through deleted text.-->
+
+    <!--DELETED TEXT:defines text that has been deleted from the document.browser will always strike a line through deleted text.-->
     <del>deleted text</del>
     <br>
-    <!--STRIKEN:this tag specifies text that no longer correct or accirate, text will be displayed with a line through it. -->
+
+    <!--STRIKEN:this tag specifies text that no longer correct or accurate, text will be displayed with a line through it. -->
     <s>strike through text</s>
     <br>
-    <!--superscript:the offset text upword-->
+
+    <!--superscript:the offset text up word-->
     2<sup>3</sup>
     <br>
-    <!--superscript:the offset text upword-->
+
+    <!--superscript:the offset text down word-->
     2<sub>3</sub>
+    <br><br><br>
+
+    <h2 id="2">
+        SUBSECTION
+    </h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda nam doloremque mollitia eveniet harum quidem ab facere ex repellendus. Sapiente harum dolor deleniti rem veritatis asperiores necessitatibus a similique quod.
+    </p>
+    <!--LISTS:HTML offers three ways to create list 
+            1.ordered list: ordered List use ordinal sequences to indicate the order of list elements.
+            2.unordered list:unordered lists use a defined symbol such as a bullet to list the elements in no order.
+            3.description list:Description list use indents to list elements with their children -->
+
+            <!--ordered list-->
+            <ol>
+                <li>one </li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+                <li>five</li>
+            </ol>
+            <br>
+            manually change the start
+            <!--if we manually want to change the starting number-->
+            <ol start="5">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+                <!--set a certain list item to a specific number-->
+                <li value="22">four</li>
+            </ol>
+            <br>
+            reversing the numbering of the List
+            <br>
+            <ol reversed>
+                <li>one </li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+                <li>five</li>
+            </ol>
+            changing the type of numeral
+            <!--
+                <ol type="1|a|A|i|I">
+            -->
+            <br>
+            <ol type="A">
+                <li>one </li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+                <li>five</li>
+            </ol>
+            <br>
+            UNORDERED LIST
+            <!--unordered list-->
+            <ul>
+                <li>html</li>
+                <li>c</li>
+                <li>c++</li>
+                <li>python</li>
+            </ul>
+            nested List
+            <ul>
+                <li>hi</li>
+                <li>hello</li>
+                <ul>
+                    <li>hi.1</li>
+                    <li>hi.2</li>
+                </ul>
+                <li>how are you</li>
+            </ul>
+            <br>
+            Description List
+            <dl>
+                <dt>one</dt>
+                <dd>description of one</dd>
+                <dt>two</dt>
+                <dd>description of two</dd>
+                <dt>three</dt>
+                <dt>four</dt>
+                <dd>value of three and four</dd>
+            </dl>
+
+        <!--TABlES: the HTML <tables> element allows web authors to display table data in a two dimensional table row and columns of cells.-->
+        <table>
+            <tr>
+                <th>heading 1 of column1</th>
+                <th>heading 2 of column 2</th>
+            </tr>
+            <tr>
+                <td>data of 1st row 1st column</td>
+                <td>data of 1st row 2nd column</td>
+            </tr>
+            <tr>
+                <td>data of 2st row 1st column</td>
+                <td>data of 2st row 2nd column</td>
+            </tr>
+        </table>
+        <br>
+        SPANNING columns or rows
+
+        <table>
+            <tr>
+                <th>heading 1</th>
+                <th>heading 2</th>
+                <th>heading 3</th>
+            </tr>
+            <tr>
+                <td>data 1</td>
+                <td>data 2</td>
+                <td>data 3</td>
+            </tr>
+            <tr>
+                <!--COLSPAN: a non-negative integer that specifies the number of columns spanned by the current cell.the default value is 1-->
+                <td colspan="3">span all three columns</td>
+            </tr>
+            <tr>
+                <!--ROWSPAN: a non -negative integer that specifies the number of rows spanned by a cell.the default value is 1.the value 0 means that the cell will extend from the current row to last row of the table-->
+                <td rowspan="2">spanning 2 row</td>
+                <td>data 4</td>
+                <td>data 5</td>
+            </tr>
+            <tr>
+                <td>data 6</td>
+                <td>data 7</td>
+            </tr>
+            <tr>
+                <td>data 8</td>
+                <td>data 9</td>
+                <td>data 10</td>
+            </tr>
+            <colgroup>
+                <col id="special">special</col>
+            </colgroup>
+        </table>
+        TABLE with colgroup
+        <table>
+            <colgroup span="3" style="background-color: green"> 
+                <col style="background-color: red;"/> 
+            </colgroup>
+            <!--column groups: to apply styling to a column, or for semantic purposes, you may want to group columns together
+            <colgroup> : allow us to group column together, before the start of any dat ain table
+            another way is using col
+            <col>: allow us to reference individual column or a range of columns without applying a logical grouping.-->
+                
+            <tr>
+                <th colspan="2">FULL NAME</th>
+                <th>age</th>
+                <th>country</th>
+                <th>income</th>
+            </tr>
+            <tr>
+                <td rowspan="2">first name1</td>
+                <td>last name1</td>
+                <td>24</td>
+                <td>USA</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>last name2</td>
+                <td>30</td>
+                <td>uk</td>
+                <td>$2000</td>
+            </tr>
+            <tr>
+                <td>first name3</td>
+                <td>last name 3</td>
+                <td>36</td>
+                <td rowspan="3">india</td>
+                <td>$3000</td>
+            </tr>
+            <tr>
+                <td>first name4</td>
+                <td>last name4</td>
+                <td>87</td>
+                <td>$2000</td>
+            </tr>
+            <tr>
+                <td>first name5</td>
+                <td>last name5</td>
+                <td>90</td>
+                <td>$2000</td>
+            </tr>
+        </table>
+        <!-- semantic tags for table:-->
+        <table>
+            <caption>monthly savings</caption>
+            <thead></thead>
+        </table>
+
+
 </body>
 </html>

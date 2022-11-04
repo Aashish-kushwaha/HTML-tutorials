@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>account table</title>
+</head>
+<body>
+    <table>
+        <colgroup span="3" style="background-color: green"> 
+            <col style="background-color: red;"/> 
+        </colgroup>
+        <!--column groups: to apply styling to a column, or for semantic purposes, you may want to group columns together
+        <colgroup> : allow us to group column together, before the start of any dat ain table
+        another way is using col
+        <col>: allow us to reference individual column or a range of columns without applying a logical grouping.-->
+            
+        <tr>
+            <th colspan="2">FULL NAME</th>
+            <th>age</th>
+            <th>country</th>
+            <th>income</th>
+        </tr>
+        <tr>
+            <td rowspan="2">first name1</td>
+            <td>last name1</td>
+            <td>24</td>
+            <td>USA</td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>last name2</td>
+            <td>30</td>
+            <td>uk</td>
+            <td>$2000</td>
+        </tr>
+        <tr>
+            <td>first name3</td>
+            <td>last name 3</td>
+            <td>36</td>
+            <td rowspan="3">india</td>
+            <td>$3000</td>
+        </tr>
+        <tr>
+            <td>first name4</td>
+            <td>last name4</td>
+            <td>87</td>
+            <td>$2000</td>
+        </tr>
+        <tr>
+            <td>first name5</td>
+            <td>last name5</td>
+            <td>90</td>
+            <td>$2000</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
