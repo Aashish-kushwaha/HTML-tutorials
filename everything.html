@@ -12,6 +12,7 @@
 </head>
 <body>
 
+    <b>link within the the page</b>
     <nav>
         <a href="#1">go to 1</a>
         <br>
@@ -59,6 +60,7 @@
                 download:specifies that the target will be downloaded when a user clicks on the hyperlinks
              -->
 
+             <b>links</b>
              <!--LINK TO ANOTHER SITE-->
              <a href="https://google.co.in" target="_blank">google link</a>
              <br>
@@ -107,7 +109,7 @@
     <u>this text is under lined</u>
     <br>
 
-    <!--ABBREVIATIION-->
+    <!--Abbreviation-->
     <abbr title="hypertext markup language">HTML</abbr>
     <br>
 
@@ -118,15 +120,17 @@
     <del>deleted text</del>
     <br>
 
-    <!--STRIKEN:this tag specifies text that no longer correct or accurate, text will be displayed with a line through it. -->
+    <!--STRIKEN: this tag specifies text that no longer correct or accurate, text will be displayed with a line through it. -->
     <s>strike through text</s>
     <br>
 
+    <b>superscript</b>
     <!--superscript:the offset text up word-->
     2<sup>3</sup>
     <br>
-
-    <!--superscript:the offset text down word-->
+    
+    <b>subscript</b>
+    <!--subscript:the offset text down word-->
     2<sub>3</sub>
     <br><br><br>
 
@@ -136,11 +140,14 @@
     <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda nam doloremque mollitia eveniet harum quidem ab facere ex repellendus. Sapiente harum dolor deleniti rem veritatis asperiores necessitatibus a similique quod.
     </p>
+
+    <b>lists</b>
     <!--LISTS:HTML offers three ways to create list 
             1.ordered list: ordered List use ordinal sequences to indicate the order of list elements.
             2.unordered list:unordered lists use a defined symbol such as a bullet to list the elements in no order.
             3.description list:Description list use indents to list elements with their children -->
 
+            <b>ordered List</b>
             <!--ordered list-->
             <ol>
                 <li>one </li>
@@ -150,6 +157,7 @@
                 <li>five</li>
             </ol>
             <br>
+
             manually change the start
             <!--if we manually want to change the starting number-->
             <ol start="5">
@@ -182,7 +190,8 @@
                 <li>five</li>
             </ol>
             <br>
-            UNORDERED LIST
+
+            <b>UNORDERED LIST</b>
             <!--unordered list-->
             <ul>
                 <li>html</li>
@@ -190,7 +199,8 @@
                 <li>c++</li>
                 <li>python</li>
             </ul>
-            nested List
+            
+            <b>nested List</b>
             <ul>
                 <li>hi</li>
                 <li>hello</li>
@@ -201,7 +211,8 @@
                 <li>how are you</li>
             </ul>
             <br>
-            Description List
+            
+            <b>Description List</b>
             <dl>
                 <dt>one</dt>
                 <dd>description of one</dd>
@@ -212,6 +223,8 @@
                 <dd>value of three and four</dd>
             </dl>
 
+            <br>
+            <b>TABLES</b>
         <!--TABlES: the HTML <tables> element allows web authors to display table data in a two dimensional table row and columns of cells.-->
         <table>
             <tr>
@@ -228,8 +241,8 @@
             </tr>
         </table>
         <br>
-        SPANNING columns or rows
 
+        <b>SPANNING columns or rows</b>
         <table>
             <tr>
                 <th>heading 1</th>
@@ -260,10 +273,8 @@
                 <td>data 9</td>
                 <td>data 10</td>
             </tr>
-            <colgroup>
-                <col id="special">special</col>
-            </colgroup>
         </table>
+
         TABLE with colgroup
         <table>
             <colgroup span="3" style="background-color: green"> 
@@ -313,11 +324,80 @@
                 <td>$2000</td>
             </tr>
         </table>
+        <br>
+
+        <b>table using semantic</b>
+
+        <br>
         <!-- semantic tags for table:-->
         <table>
+            <!--caption : it is used to give caption to the table a kind of heading to the table, by default center-aligned above a table.-->
             <caption>monthly savings</caption>
-            <thead></thead>
+
+            <!--thead: it is used to group header content in an HTML table-->
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>class</th>
+                    <th>section</th>
+                    <th>age</th>
+                </tr>
+            </thead>
+            
+            <!-- tbody: used to group the body content together in an table -->
+            <tbody>
+                <tr>
+                    <td>ashu</td>
+                    <td>12</td>
+                    <td>f</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>ankit</td>
+                    <td>11</td>
+                    <td>f</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>hema</td>
+                    <td>12</td>
+                    <td>f</td>
+                    <td>16</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="0">footer h ye</td>
+                </tr>
+            </tfoot>
+
         </table>
+        <b>tables with scope</b>
+        <!--scope: the element are used to indicate heading for the table rows and columns-->
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th scope="col">Month</th>
+                    <th scope="col">Savings</th>
+                </tr>
+            </thead>
+        
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</td>
+                    <td>February</td>
+                    <td>$80</td>
+                </tr>
+            </tbody>
+        
+        </table>
+
 
 
 </body>
