@@ -8,7 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="this is toyurial">
+    <link rel="icon" href="https://web-dev.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/c8pUK6HOlCuehgtqzFci.png?auto=format&w=845">
     <title>everything</title> <!--title of the page displayed on the tab of the page -->
+    <style>
+        /* HTML link colors: an html link is displayed in different color depending on whether it has been visited, unvisited, or is active. */
+        a:link{
+            color: green;
+        }
+        a:visited{
+            color:pink;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active{
+            color:blue
+        }
+    </style>
 </head>
 <body>
 
@@ -54,9 +70,9 @@
 
              <!--ANCHORS AND HYPERLINKS-->
              <!--
-                href: specifies the destination address. it can be an absolute or relative URL,ot the name of the anchpr,absolute addrees is the link of some website like http://exaple.com . a relative URL points to the directory or documents inside the same documents,
+                href: specifies the destination address. it can be an absolute or relative URL,ot the name of the anchor,absolute address is the link of some website like http://exaple.com . a relative URL points to the directory or documents inside the same documents,
                 rel:specifies the relationship between the current document and the linked document.                
-                target: specifies wher to open link e.g new tab or same windowpossible values are _balnk,_self,_parent, _top.
+                target: specifies where to open link e.g new tab or same window possible values are _balnk,_self,_parent, _top.
                 download:specifies that the target will be downloaded when a user clicks on the hyperlinks
              -->
 
@@ -65,7 +81,7 @@
              <a href="https://google.co.in" target="_blank">google link</a>
              <br>
 
-             <!--ANCHOR: Anchors can be used to jump to speccific tags on a HTML page, usually used to visit the subsection of the page.whe we have several section we may want to cretae a table of contents at the top of the page with quick links to specific section.
+             <!--ANCHOR: Anchors can be used to jump to specific tags on a HTML page, usually used to visit the subsection of the page.whe we have several section we may want to create a table of contents at the top of the page with quick links to specific section.
             ->we give ID attribute to the section or topics to see example go to start of the page-->
              <br>
 
@@ -84,9 +100,26 @@
              <!--telephone number-->
              <a href="tel:456789765489">phone</a>
              <br>
+             <!-- use an image as link -->
+             <a href="https://www.google.com/">
+                <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1000w,f_auto,q_auto:best/streams/2013/March/130326/1C6639340-google-logo.jpg" alt="google img" style="width: 100px; height:100px" title="link to google">
+             </a>
 
-             <!--image insertion-->
+             <!--image insertion
+            src attributes:src attributes specifies the path to the image to be displayed.
+            alt attribute:alt attribute specifies an alternate text for an image if the image for some reason cannot be displayed for any reason-->
+             <!-- there are two ways to specify the URL in the src attribute:
+            ABSOLUTE URL:links to external image that is hosted in another website. -->
+            <img src="https://petapixel.com/assets/uploads/2022/07/DALLEcopy-800x420.jpg" alt="pineapple">
+            <!-- RELATIVE URL:Links to an image that are hosted within the website. here URL does not contain the domain name. -->
              <img src="img2.jpg" alt="taj mahal" height="300" width="300" >
+             <br>
+             <!-- image floating:use CSS float property to let the image float to the right or to the left of a text: -->
+             <p>
+                <img src="https://media1.giphy.com/media/WtOkaikiwaR87ZvAFH/giphy.gif?cid=ecf05e47si4ap0282nygmrgcsd3mfaja5xwmh61vs8whuopy&rid=giphy.gif&ct=g" alt="smily emoji" style="float: right;width:30px;height:30px">the image will float to the right of the text
+             </p>
+             <br>
+             <img src="https://media1.giphy.com/media/WtOkaikiwaR87ZvAFH/giphy.gif?cid=ecf05e47si4ap0282nygmrgcsd3mfaja5xwmh61vs8whuopy&rid=giphy.gif&ct=g" alt="smily emoji" style="float: left;width:30px;height:30px">the image will float to the left of the text
     </p>
 
 
@@ -113,7 +146,7 @@
     <abbr title="hypertext markup language">HTML</abbr>
     <br>
 
-    <!--INSERTED TEXT-->
+    <!--INSERTED TEXT: defiens a text that has been inserted into a document.browsers usually underline inserted text-->
     <ins>inserted text</ins>
 
     <!--DELETED TEXT:defines text that has been deleted from the document.browser will always strike a line through deleted text.-->
@@ -133,6 +166,8 @@
     <!--subscript:the offset text down word-->
     2<sub>3</sub>
     <br><br><br>
+    <!-- small text-->
+    <small>this text is small</small>
 
     <h2 id="2">
         SUBSECTION
@@ -330,7 +365,7 @@
 
         <br>
         <!-- semantic tags for table:-->
-        <table>
+        <table style="border:2px solid tomato">
             <!--caption : it is used to give caption to the table a kind of heading to the table, by default center-aligned above a table.-->
             <caption>monthly savings</caption>
 
@@ -397,6 +432,27 @@
             </tbody>
         
         </table>
+
+        <!-- Quotation and citation -->
+        <!-- blockquate: elements defiens a section that is quoted from another source, browsers usually indent these elements -->
+        <blockquote cite="https://en.wikipedia.org/wiki/India">Modern humans arrived on the Indian subcontinent from Africa no later than 55,000 years ago
+
+        </blockquote>
+        <!-- q: this tag defines a short quotation. -->
+        <p>
+            this text is to define <q>quotation</q>in html
+        </p>
+        <!-- bdo: BDO stands for bi-directional override this tag is used to override the current text direction -->
+        <bdo dir="rtl">this text is from right to left</bdo>
+        <br>
+        <!-- color:
+            ->an RGB color value represents RED, GREEN and BLUE light sources. rgb(red,green,blue).value is between 0-255. total 256X256X256=16777216 possible colors.
+            an RGBA color is the extension of RGBA with an alpha channel(opacity). every thing is same except one extra value of alpha rgba(red,gree,blue,alpha) the alpha parameter is a number between 0.0(fully transparent and 1.0(not transparent at all)) -->
+            <h3 style="background-color: rgba(255,99,71,0.3);">rgba(255,99,71,0.3)</h3>
+
+            <!-- HEX colors:a hexadecimal color is specified with #RRGGBB, where RR(red), GG(green) and BB(blue) are hexadecimal integers specify the components of the color. -->
+            <h3 style="background-color: #ff0000;">color is hexa</h3>
+            <br>
 
 
 
