@@ -120,6 +120,20 @@
              </p>
              <br>
              <img src="https://media1.giphy.com/media/WtOkaikiwaR87ZvAFH/giphy.gif?cid=ecf05e47si4ap0282nygmrgcsd3mfaja5xwmh61vs8whuopy&rid=giphy.gif&ct=g" alt="smily emoji" style="float: left;width:30px;height:30px">the image will float to the left of the text
+             <br>
+             <!-- HTML image map: using <map> tag we can create clickable areas on an image.the areas are defined with one or more <area> tags.
+            -> the idea behind an image map is that you should be able to perform different actions depending on where in the image you click.
+              -->
+              <img src="images.jpg" alt="setup image" usemap="#workmap">
+              <map name="workmap">
+                <!-- now add area using <area> elements which have attribute shape;
+                rect:define rectangle
+                circle:define circle region 
+                poly:defines a polygon region
+                default: define the entire region-->
+                <area shape="rect" coords="20,20,100,200" href="lesson01.html" alt="rectangle">
+
+              </map>
     </p>
 
 
@@ -434,7 +448,7 @@
         </table>
 
         <!-- Quotation and citation -->
-        <!-- blockquate: elements defiens a section that is quoted from another source, browsers usually indent these elements -->
+        <!-- blockquote: elements defines a section that is quoted from another source, browsers usually indent these elements -->
         <blockquote cite="https://en.wikipedia.org/wiki/India">Modern humans arrived on the Indian subcontinent from Africa no later than 55,000 years ago
 
         </blockquote>
@@ -453,6 +467,9 @@
             <!-- HEX colors:a hexadecimal color is specified with #RRGGBB, where RR(red), GG(green) and BB(blue) are hexadecimal integers specify the components of the color. -->
             <h3 style="background-color: #ff0000;">color is hexa</h3>
             <br>
+
+            <!-- background image:background image can be specified fro almost all HTML element -->
+            <p style="background-image: url('images.jpg');">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium reiciendis sit vitae vel ad, porro iure, recusandae libero, sequi voluptatum quibusdam quam eligendi. Nam unde voluptas minima, voluptatem ea voluptate!</p>
 
 
 
