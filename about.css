@@ -1,0 +1,62 @@
+/* CSS: css is the language we use to style a web page
+-> CSS stands for Cascading style sheets
+-> CSS describe how HTML elements are to be displayed on screen , paper or in the other media.
+CSS comprises of style rules that are interpreted by the browser and then applied to the corresponding elements in your document. a style rules is made of three parts:
+SELECTOR-> A selector is an HTML tag at which will be applied. this could be any tag like <h1> or <table>
+PROPERTY: A property is type of attribute of HTML tag. they could be color, border etc.
+VALUE: values are assigned to properties.
+SYNTAX:
+selector ( property : value}
+
+the types of selector
+/* universal selector: the universal selector(*) selects all HTML elements on the page.
+ */
+ *{
+    text-align: center;
+    color:blue;
+ }
+
+ /* the CSS grouping selector: the grouping selector selects all the HTML elements with the same style definitions. */
+ h1{
+    text-align: center;
+    color: red;
+ }
+ h2{
+    text-align: center;
+    color: green;
+ }
+ p{
+    text-align: center;
+    color:blue;
+ }
+ /* the descendant selectors:suppose we want to apply style rule to a particular element only when it lies inside a particular element. style rule will apply to <em> element only when it lies inside <ul> tag. */
+ ul em{
+    color:#000000;
+ }
+/* the CSS id SELECTOR: the id selector uses the id attribute of an HTML element to select a specific element.
+The id of an element with is unique within a page, so the id detector is used to select one unique element.
+to select an element with a specific id, write a hash(#) character, followed by th eid of the element.
+  */
+#h1{
+    text-align: center;
+    color:red;
+}
+/* the CSS class selector: the class selector selects HTML elements with a specific class attribute.
+to select elements with a specific with a class, write a period(.) character, followed by the class name.
+  */
+  .center{
+    text-align: center;
+    color: pink;
+  }
+
+/* ways to insert css
+there ar ethree ways of inserting css:
+*external CSS
+*internal CSS
+*inline CSS */
+
+/* external css: with an external style sheet you can change the look of an entire website by changing just one file. each html page must include a reference to the external style file inside the <link> element, inside the head section. for example go to learncss.html*/
+
+/* internal css: an internal style sheet may be used if one single HTML page has unique style.the internal style is defined inside the <style> element, inside the head section. for example go to learncss.html */
+
+/* INLINE CSS : an inline style may be used to apply a unique style for a single element. to use inline styles, add the style attribute to the relevant  element the style attriute can contain any css property. */
