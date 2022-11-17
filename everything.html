@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="this is toyurial">
+    <!-- FAVICON: a favicon is small image dispalyed next to the page title in the browser tab. -->
     <link rel="icon" href="https://web-dev.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/c8pUK6HOlCuehgtqzFci.png?auto=format&w=845">
     <title>everything</title> <!--title of the page displayed on the tab of the page -->
     <style>
@@ -23,6 +24,13 @@
         }
         a:active{
             color:blue
+        }
+        /* ADD BORDER in tables*/
+        table, td, th{
+            /* to add border we use the css border property on table,th,td */
+            border: 1px  solid green;
+            /* to avoid having double lines as in the above line we use css border-collapse prperty to collapse */
+            border-collapse: collapse;
         }
     </style>
 </head>
@@ -136,7 +144,15 @@
               </map>
 
               <!-- picture element
-             <picture>:this element allow us to display picture for different devices or screen sizes,the picture element contains one or more <source> elements, each referring to different images through the srcset attribute. this way the browser can choose the image that best fits the current ciew and or device.-->
+             <picture>:this element allow us to display picture for different devices or screen sizes,the picture element contains one or more <source> elements, each referring to different images through the srcset attribute. this way the browser can choose the image that best fits the current view and or device.
+            media attribute of <source> tag defiens when the image is the most suitable.-->
+                <picture>
+                    <source media="(min-width:650px" srcset="p1.jpg">
+                    <source media="(min-width:450px" srcset="p2.jpg">
+                    <img src="p3.jpg" alt="image">
+                </picture>
+                
+
     </p>
 
 
