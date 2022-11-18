@@ -60,3 +60,32 @@ there ar ethree ways of inserting css:
 /* internal css: an internal style sheet may be used if one single HTML page has unique style.the internal style is defined inside the <style> element, inside the head section. for example go to learncss.html */
 
 /* INLINE CSS : an inline style may be used to apply a unique style for a single element. to use inline styles, add the style attribute to the relevant  element the style attriute can contain any css property. */
+
+
+#bg{
+   background-color: yellow;
+}
+#bgc{
+   background-image: url("img1.jpg");
+   /* if image is small and we do not want image to repeat then  */
+   background-repeat: no-repeat;
+   /* if we want image to repeat at x axis */
+   background-repeat: repeat-x;
+   /* if we want image to repeat at y axis */
+   background-repeat: repeat-y;
+   /* to set the position of background image */
+   background-position: right center;/*in englih*/
+   background-position: 30px 40px; /* in pixel*/
+   /* size of background image */
+   background-size: 300px 300px;
+
+   background-attachment:fixed;
+   background-size: cover;
+
+}
+#gh{
+   background-image: url(c2.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: yellow;
+}
