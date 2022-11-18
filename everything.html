@@ -2,9 +2,14 @@
 <html lang="en"> <!--opens the page no markup should come after closing this tab, the lan attribute declares the primary language of the page using the ISO code-->
 
 <head> <!--opens the head section which does not appear in the main browser window but mainly contains the data about the HTML document called metadata also contains the external imports such as style sheet and scripts-->
+
+    <!-- define the character set used -->
     <meta charset="UTF-8">
     <!--meta gives some information about  the HML document. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport: the viewport is the user's visible area of a webpage. it varies with the device-it is smaller in the phone than on pc
+    the width=device-width part sets the width of the page to follow the screen-width of the device(which will depending on the device)
+    the initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="this is toyurial">
@@ -122,6 +127,7 @@
             <!-- RELATIVE URL:Links to an image that are hosted within the website. here URL does not contain the domain name. -->
              <img src="img2.jpg" alt="taj mahal" height="300" width="300" >
              <br>
+
              <!-- image floating:use CSS float property to let the image float to the right or to the left of a text: -->
              <p>
                 <img src="https://media1.giphy.com/media/WtOkaikiwaR87ZvAFH/giphy.gif?cid=ecf05e47si4ap0282nygmrgcsd3mfaja5xwmh61vs8whuopy&rid=giphy.gif&ct=g" alt="smily emoji" style="float: right;width:30px;height:30px">the image will float to the right of the text
@@ -489,6 +495,53 @@
 
             <!-- background image:background image can be specified fro almost all HTML element -->
             <p style="background-image: url('images.jpg');">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium reiciendis sit vitae vel ad, porro iure, recusandae libero, sequi voluptatum quibusdam quam eligendi. Nam unde voluptas minima, voluptatem ea voluptate!</p>
+
+
+            <p>IFRAME</p>
+            <!-- iframe: <iframe> tag specifies an inline frame, an inline frame is used to embed another document within the current HTML document -->
+            <iframe src="images.html" height="200" width="300" title="iframe example" frameborder="1"></iframe>
+                <!--iframe-target for link: am iframe can be used as the target frame for a link. the target attribute of teh link must refer to the name attribute of the frame  -->
+                <iframe src="images.html" width="300" height="200" name="iframe_h" frameborder="1"></iframe>
+                <p><a href="https://www.w3schools.com/html/html_iframe.asp" target="iframe_h">ashu</a></p>
+                <p>
+                    <h3>HTML layout elements</h3>
+                    HTML has several semantic elements that define the different parts of a web page:
+
+                </p>
+                <img src="s1.jpg" alt="semantic format" style="float: left;"><p>
+                    <b>&lt;header&gt;</b>-Defines a header for a documents or s section.
+                    <br>
+                    <b>&lt;nav&gt;</b>-defines a set of navigation links.
+                    <br>
+                    <b>&lt;section&gt;</b>-defines a section in a document.
+                    <br>
+                    <b>&lt;article&gt;</b>-defines an independent, self-contained content.
+                    <br>
+                    <b>&lt;aside&gt;</b>-defines content aside from the content (like side bar).
+                    <br>
+                    <b>&lt;footer&gt;</b>-defines a footer for a document or a section.
+                    <br>
+                    <b>&lt;details&gt;</b>-defiens additional details that the user can open and close on demand.
+                    <br>
+                    <b>&lt;summary&gt;</b>-defiens a heading for the &lt;details&gt; element
+                </p>
+                <br>
+                <br><br>
+                <br>
+                <p>
+                    <h3>HTML layout technique:</h3>
+                    <br>
+                    there are for different techniques to create multicolumn layouts.
+                    <ul>
+                        <li>CSS framework</li>
+                        <li>CSS float property</li>
+                        <li>CSS flexbox</li>
+                        <li>CSS grid</li>
+                    </ul>
+                </p>
+
+                
+
 
 
 
