@@ -172,3 +172,34 @@ a:active{
    font-variant: small-caps;
    font-family: 'Rubik Microbe', cursive;
 }
+
+#d7{
+   border: 1px solid green;
+   cursor: crosshair;
+}
+
+#d8{
+   border: 1px solid green;
+   width: 500px;
+   background-color: yellowgreen;
+   margin: 100px;
+   padding: 30px;
+
+   /*box-shadow: 10px 30px 10px 20px gray; /*x-axis y-axis spread radius  blur radius*/
+   
+   /* inside shadow */
+   /* box-shadow: 10px 30px 10px 20px yellow inset; */
+   /* multiple shadow */
+   box-shadow: 20px 30px 15px 25px red, 10px 20px 30px 25px blue;
+}
+
+/* css opacity */
+#d9{
+   background-color: green;
+   height: 700px;
+   width: 700px;margin-bottom: 20px;
+   opacity: 0.5; /*opacity is between 0-1*/
+}
+#d9:hover{
+   opacity: 0.2;
+}
