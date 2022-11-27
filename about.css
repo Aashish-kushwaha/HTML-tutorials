@@ -89,3 +89,86 @@ there ar ethree ways of inserting css:
    background-size: cover;
    background-color: yellow;
 }
+
+#border{
+   border-style: solid dashed dotted ridge; /*top right bottom left*/
+   border-width: 5px 4px 5px 2px;
+   border-color: green blueviolet red orange;
+   /* curve in the border */
+   border-radius: 10px;
+
+}
+
+#d1{
+   background-color: purple;
+   height: 70%;
+   width: 60%;
+   max-width: 500px;
+   max-height: 300px;
+
+}
+
+#d2{
+   border: 1px solid red;
+   padding-top: 50px;
+   padding-bottom: 6px;
+   padding-right: 70px;
+   padding-left: 40px;
+
+}
+
+#d3{
+    border: 1px solid green;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 70px;
+    /* margin collapse */
+}
+#text{
+   width: 500px;
+   border: 1px solid black;
+
+   color: red;
+   text-align: justify;
+    
+    direction: rtl;
+
+    text-decoration: underline;
+    /* text-transform: uppercase; */
+   text-transform: capitalize;
+   line-height: 30px;
+
+   text-indent: 50px;
+
+   letter-spacing: 10px;
+   word-spacing: 15px;
+
+}
+/* css links */
+a{
+   text-decoration: none;
+   /* states of links: visited, hover, active, link
+   link and visited should b above hover and active is always down. */
+
+}
+a:link{
+   color: yellowgreen;
+}
+a:visited{
+   color: black;
+}
+a:hover{
+   color: orange;
+}
+a:active{
+   color: red;
+}
+/* CSS fonts */
+#font{
+   font-weight: bold;
+   font-size: 30px;
+   font-style: italic;
+   font-variant: small-caps;
+   font-family: 'Rubik Microbe', cursive;
+}

@@ -540,7 +540,45 @@
                     </ul>
                 </p>
 
-                
+                <!-- HTML forms: html form is used to collect user input, which is often sebnt to a server for processing.
+                <form> element is used to create form for user input. the form element is a container for different types of input elements, such as: text fields, checkboxes,radiobuttons submit button -->
+
+                <!-- <input> most used form element, if the name attribute is ommitted, the value of the field will not be sent at -->
+                <!-- <label> defines a label for many form elements,useful for screen-reader users,
+                    the for attribut of the <label> tag should be equal to the id attribute of the <input> element to build them together. -->
+                <form >
+                    <!-- text field -->
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname"><br>
+                    <label for="lname">Last name</label><br>
+                    <input type="text" id="lname"><br>
+
+                    <!-- radio button: radio buttons let a user select one of the limited number of choices. -->
+                    <p>choose the fav language</p><br>
+                    <input type="radio" name="favl" id="c" value="C language">
+                    <label for="c">C language</label><br>
+                    <input type="radio" name="favl" id="c++" value="C++ language">
+                    <label for="c++">C++ language</label><br>
+                    <input type="radio" name="favl" id="java" value="JAVA">
+                    <label for="java">JAVA</label>
+
+                    <!-- checkboxes: checkboxes let a user select ZERO or MORE options of a limited number of choices. -->
+                    <p>vehicle you own</p>
+                    <input type="checkbox" id="v1" name="vehicle1" value="bike">
+                    <label for="v1">i have bike</label><br>
+                    <input type="checkbox" id="v2" name="vehicle2" value="car">
+                    <label for="v2">i have car</label><br>
+                    <input type="checkbox" id="v3" name="vehicle3" value="boat">
+                    <label for="v3">i have boat</label><br>
+                </form>
+                 <!-- submit button:define a button for submitting the form data to a form-handler. the form-andler is typically a file on the server with a script for processing input data.the form handler is specified in the form's action attribute.-->
+                 <form action="/action_page.php">
+                    <label for="fname">First name</label><br>
+                    <input type="text" id="fname" name="fnaem"><br>
+                    <label for="lname">Last name</label><br>
+                    <input type="text" id="lanme" name="lname"><br>
+                    <input type="submit" value="submit">
+                 </form>
 
 
 
