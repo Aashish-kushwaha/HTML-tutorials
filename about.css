@@ -226,6 +226,44 @@ a:active{
    height: 300px;
    overflow-x: hidden;
    overflow-y: scroll;
+   /* if we do not know whether there is a need of overflow or not so we use auto
+   overflow:auto; */
+   /* resizable */
+/* text area is by default resizable */
+resize: both;/*it can also be none,vertical,horizontal*/
 
+}
+
+ul{
+   list-style-type: square;
+   /* we can put image as style type */
+   /* list-style-image: url(''); */
+   list-style-position: inside;
+}
+
+ol{
+   list-style-type: lower-roman;
+}
+
+li{
+   border: 1px solid black;
+}
+
+table{
+   border: 1px solid black;
+}
+tr{
+   border:1px solid black;
+
+}
+caption{
+   border:1px solid black;
+
+}
+td{
+   border:1px solid black;
+}
+th{
+   border:1px solid black;
 
 }
