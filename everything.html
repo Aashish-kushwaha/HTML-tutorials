@@ -5,15 +5,17 @@
 
     <!-- define the character set used -->
     <meta charset="UTF-8">
-    <!--meta gives some information about  the HML document. -->
+    <!--meta gives some information about  the HTML document. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <!-- viewport: the viewport is the user's visible area of a webpage. it varies with the device-it is smaller in the phone than on pc
     the width=device-width part sets the width of the page to follow the screen-width of the device(which will depending on the device)
     the initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="this is toyurial">
-    <!-- FAVICON: a favicon is small image dispalyed next to the page title in the browser tab. -->
+    
+    <meta name="description" content="this is toturial">
+
+    <!-- FAVICON: a favicon is small image displayed next to the page title in the browser tab. -->
     <link rel="icon" href="https://web-dev.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/c8pUK6HOlCuehgtqzFci.png?auto=format&w=845">
     <title>everything</title> <!--title of the page displayed on the tab of the page -->
     <style>
@@ -83,7 +85,7 @@
 
              <!--ANCHORS AND HYPERLINKS-->
              <!--
-                href: specifies the destination address. it can be an absolute or relative URL,ot the name of the anchor,absolute address is the link of some website like http://exaple.com . a relative URL points to the directory or documents inside the same documents,
+                href: specifies the destination address. it can be an absolute or relative URL,or the name of the anchor,absolute address is the link of some website like http://exaple.com . a relative URL points to the directory or documents inside the same documents,
                 rel:specifies the relationship between the current document and the linked document.                
                 target: specifies where to open link e.g new tab or same window possible values are _balnk,_self,_parent, _top.
                 download:specifies that the target will be downloaded when a user clicks on the hyperlinks
@@ -94,7 +96,7 @@
              <a href="https://google.co.in" target="_blank">google link</a>
              <br>
 
-             <!--ANCHOR: Anchors can be used to jump to specific tags on a HTML page, usually used to visit the subsection of the page.whe we have several section we may want to create a table of contents at the top of the page with quick links to specific section.
+             <!--ANCHOR: Anchors can be used to jump to specific tags on a HTML page, usually used to visit the subsection of the page.when we have several section we may want to create a table of contents at the top of the page with quick links to specific section.
             ->we give ID attribute to the section or topics to see example go to start of the page-->
              <br>
 
@@ -119,11 +121,13 @@
              </a>
 
              <!--image insertion
-            src attributes:src attributes specifies the path to the image to be displayed.
-            alt attribute:alt attribute specifies an alternate text for an image if the image for some reason cannot be displayed for any reason-->
-             <!-- there are two ways to specify the URL in the src attribute:
+            src attributes: src attributes specifies the path to the image to be displayed.
+            alt attribute: alt attribute specifies an alternate text for an image if the image for some reason cannot be displayed for any reason-->
+
+            <!-- there are two ways to specify the URL in the src attribute:
             ABSOLUTE URL:links to external image that is hosted in another website. -->
             <img src="https://petapixel.com/assets/uploads/2022/07/DALLEcopy-800x420.jpg" alt="pineapple">
+
             <!-- RELATIVE URL:Links to an image that are hosted within the website. here URL does not contain the domain name. -->
              <img src="img2.jpg" alt="taj mahal" height="300" width="300" >
              <br>
@@ -135,7 +139,7 @@
              <br>
              <img src="https://media1.giphy.com/media/WtOkaikiwaR87ZvAFH/giphy.gif?cid=ecf05e47si4ap0282nygmrgcsd3mfaja5xwmh61vs8whuopy&rid=giphy.gif&ct=g" alt="smily emoji" style="float: left;width:30px;height:30px">the image will float to the left of the text
              <br>
-             <!-- HTML image map: using <map> tag we can create clickable areas on an image.the areas are defined with one or more <area> tags.
+            <!-- HTML image map: using <map> tag we can create clickable areas on an image.the areas are defined with one or more <area> tags.
             -> the idea behind an image map is that you should be able to perform different actions depending on where in the image you click.
               -->
               <img src="images.jpg" alt="setup image" usemap="#workmap">
@@ -267,7 +271,7 @@
 
             <b>UNORDERED LIST</b>
             <!--unordered list-->
-            <ul>
+            <ul type="circle">
                 <li>html</li>
                 <li>c</li>
                 <li>c++</li>
