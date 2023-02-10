@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form </title>
+    <style>
+        table, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            width: auto;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <ol>
+            <li>
+                <p for="appointment">please select one of the following options regarding your current appointment</p>
+                <select name="appointment" id="appointment">
+                    <option value="tenured">tenured</option>
+                    <option value="Associate">Associate</option>
+                    <option value="assistant">Assistant</option>
+                    <option value="Adjunct">Adjunct</option>
+                    <option value="Visiting">Visiting</option>
+                </select>
+            </li>
+            <li>
+                <p for="2">which department are you affiliated with</p>
+                <select name="2" id="2">
+                    <option value="astronomy">astronomy</option>
+                    <option value="Biology">Biologyy</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="computer science">computer science</option>
+                    <option value="environmental science">environmental science</option>
+                    <option value="physics">physics</option>
+                </select>
+            </li>
+            <li>
+                <p for="e-resources" >please check any of the following e-resources that you have used in the past  month</ p>
+                    <input type="radio" id="google" name="google"><label for="google">Google</label><br>
+
+                    <input type="radio" id="citetion_index" name="citetion_index"><label for="citetion_index">science citetion index</label><br>
+
+                    <input type="radio" id="Georef" name="Georef"><label for="Georef">GeoRef</label><br>
+
+                    <input type="radio" id="inspec" name="inspec"><label for="inspec">inspec</label><br>
+
+                    <input type="radio" id="Biosis" name="Biosis"><label for="Biosis">Biosis</label><br>
+
+                    <input type="radio" id="pubmed" name="pubmed"><label for="pubmed">pubmed</label>
+            </li>
+            <li>
+                <table>
+                    <tr>
+                        <td colspan="4">
+                            how often do you use citetion index?
+                            <br>
+                            
+                                <input type="radio
+                                " name="never" id="never"><label for="never">never</label>
+                            
+                           
+                                <input type="radio
+                                " name="sem" id="sem"><label for="sem">once a semester</label>
+                           
+                          
+                                <input type="radio
+                                " name="month" id="month"><label for="month">once a month</label>
+                         
+                              <input type="radio
+                                " name="week" id="week"><label for="week">once a week</label>
+                            
+                        </td>
+                    </tr>
+                    
+                </table>
+            </li>
+        </ol>
+       
+    </form>
+    
+</body>
+</html>
