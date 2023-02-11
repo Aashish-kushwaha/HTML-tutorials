@@ -6,14 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form </title>
     <style>
-        table, td, th{
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        td{
-            width: auto;
-            height: 10px;
-        }
+       
     </style>
 </head>
 <body>
@@ -59,30 +52,94 @@
                     <tr>
                         <td colspan="4">
                             how often do you use citetion index?
-                            <br>
-                            
-                                <input type="radio
-                                " name="never" id="never"><label for="never">never</label>
-                            
-                           
-                                <input type="radio
-                                " name="sem" id="sem"><label for="sem">once a semester</label>
-                           
-                          
-                                <input type="radio
-                                " name="month" id="month"><label for="month">once a month</label>
-                         
-                              <input type="radio
-                                " name="week" id="week"><label for="week">once a week</label>
-                            
+                            <br>  
                         </td>
                     </tr>
-                    
+                    <tr>
+                        <td>
+                            <label for="never">never</label><input type="radio" name="never" id="never">
+                        </td>
+                        <td>
+                       
+                            <label for="sem">once a semester</label><input type="radio" name="sem" id="sem">
+                        </td>
+                        <td>
+                      
+                            <label for="month">once a month</label><input type="radio" name="month" id="month">
+                        </td>
+                        <td>
+                            <label for="week">once a week</label><input type="radio" name="week" id="week">
+                      
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            how often do you use google?at least
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="never2">Never</label><input type="radio" name="never2" id="never2">
+                        </td>
+                        <td>
+                            <label for="sem2">once a semester</label><input type="radio" name="sem2" id="sem2">
+                        </td>
+                        <td>
+                            <label for="month2">once a month</label><input type="radio" name="month2" id="month2">
+                        </td>
+                        <td>
+                            <label for="week2">once a week</label><input type="radio" name="week2" id="week2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            how satisfied are you with the e-journal selection in science direct
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="satisfied">very satisfied</label><input type="radio" name="satisfied" id="satisfied">
+                        </td>
+
+                        <td>
+                            <label for="somewhat">somewhat satisfied</label><input type="radio" name="somewhat" id="somewhat">
+                        </td>
+                        <td>
+                            <label for="selection">seelction is "SO-so</label><input type="radio" name="selection" id="selection">
+                        </td>
+                        <td>
+                            <label for="doesnot">does not meet my research needs</label><input type="radio" name="doesnot" id="doesnot">
+                        </td>
+                    </tr>
+                   
                 </table>
+                <br><br>
             </li>
-        </ol>
-       
+
+            <li>
+                Do you any recommendations for new e-journals or e-books?
+                <br>
+                <textarea name="text" id="text" cols="80" rows="5"></textarea>
+            </li>
+        </ol>       
     </form>
-    
+
+    <h1 style="text-align: center;"><b>Optional questions</b></h1>
+    <p>
+        if you are open to having one of the librarry staff contact you as a follow-up to this questionnaire, please supply the following information:
+    </p>
+    <form >
+        <label for="name">Your name  </label><input type="text" name="name" id="name"><br>
+        <br>
+        <label for="email">Your email address  </label><input type="email" name="email" id="email"><br>
+        <br>
+        <p>we thank you for taking the time to complete this survey. please now click the <b>send</b> button your responses</p>
+
+        <br>
+
+        <button type="button">send</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button">clear form</button><u><i>click this button if you want to start again</i></u>
+        
+
+    </form>
 </body>
 </html>
