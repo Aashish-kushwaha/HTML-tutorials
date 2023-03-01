@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+</head>
+<style>
+    input {
+        margin: 10px;
+    }
+</style>
+<center>
+    <body>
+        <h1>Employee Registration Form</h1>
+        <form name="frmDataEntry" action="Processing.html" method="GET">
+            <label for="name">Full Name:</label>
+            <input type="text" placeholder="Enter Your full name" maxlength="35" value="" required />
+            <br>
+            <label for="Usename">Username:</label>
+            <input type="text" placeholder="Enter Your Username" maxlength="35" value="" required />
+            <br>
+            <label for="Password">Password:</label>
+            <input type="password" placeholder="**********" maxlength="35" value="" required />
+            <br>
+            <label for="FatherName">Father's Name:</label>
+            <input type="text" placeholder="Enter Your Father's Name" maxlength="35" value="" required />
+            <br>
+            <label for="MotherName">Mother's Name:</label>
+            <input type="text" placeholder="Enter Your Mother's Name" maxlength="35" value="" required />
+            <br>
+            <label for="name">Univeristy Overall CGPA:</label>
+            <input type="number" placeholder="Enter Your Overalll CGPA" maxlength="5" value="" required />
+            <br>
+            <label for="name">High School %:</label>
+            <input type="number" placeholder="Enter Your High School%" maxlength="5" value="" required />
+            <br>
+            <label for="name">Intermediate %:</label>
+            <input type="number" placeholder="Enter Your Intermediate%%" maxlength="5" value="" required />
+            <br>
+            <label for="dob">DOB:</label>
+            <input type="date" name="dob" id="dob" value="" required />
+            <br>
+            <label for="name">Email:</label>
+            <input type="text" placeholder="Enter your Email ID" maxlength="40" value="" required />
+            <br>
+            <label for="name">Contact Number:</label>
+            <input type="text" placeholder="Enter your Contact Number" value="" required />
+            <br>
+            <label for="name">Address:</label>
+            <input type="text" placeholder="Enter Your Address" maxlength="35" value="" required />
+            <br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender"> Male <input type="radio" name="gender" checked /> Female <input
+                type="radio" name="gender" checked /> Other <br><br>
+            <label for="Location">Location:</label>
+            <input type="checkbox" name="location"> Mumbai <input type="checkbox" name="location" /> Delhi
+            <input type="checkbox" name="location" checked /> Bengaluru <br><br>
+            <label for="Department">Department:</label>
+            <select name="dep" id="dep">
+                <option value="accounts">Accounts</option>
+                <option value="admin">Administration</option>
+                <option value="it">IT</option>
+                <option value="management">Management</option>
+            </select>
+            <br><br>
+            <label for="image">Photo:</label> <input type="file">
+            <br>
+            <input type="submit" value="Register"> <br><br><br><br>
+        </form>
+    </body>
+</center>
+
+</html>
