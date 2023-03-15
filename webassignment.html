@@ -28,7 +28,8 @@
         /* second part */
         #art1{
             width: 2000px;
-            height: 900px;
+            height: 700px;
+           
 
 
         }
@@ -53,11 +54,78 @@
         /* third part */
         #sec1
         {
-            height: 500px;
+            height: 850px;
             width: 2000px;
             background-color: rgb(198, 209, 209);
+
+            /* border: 1px solid bla; */
         }
 
+        #tab2{
+            margin-left: 100px;
+            margin-right: 100px;
+            height: 400px;
+            width: 1800px;
+
+
+
+            /* border: 1px solid black; */
+        }
+
+        #td3{
+            height: 50px;
+            width: 600px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 30px;
+            
+        }
+        #td3:hover{
+            background-color: aqua;
+            color: white;
+        }
+        #td4{
+            background-color: white;
+            vertical-align: top;
+            font-weight: bold;
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        /* part 4 */
+        #sec2{
+            width: 2000px;
+            height: 600px;
+            background-color: white;
+
+
+            border: 1px solid black;
+        }
+
+        #td5{
+            width:450;
+            height: 400;
+
+        }
+        #td6
+        {
+            /* vertical-align: top; */
+            padding-left: 20px;
+            width: 450px;
+            height: 400px;
+            background-color: rgb(246, 246, 245);
+
+        }
+
+        #but{
+            background-color: aqua;
+            height: 50px;
+            width: 200px;
+            color:rgb(195, 193, 193);
+            font-size: large;
+        }
+        
         
 
     </style>
@@ -74,7 +142,7 @@
                 <br>
                 YOUR HOME
             </h1>
-        </h3>
+        </h3>t
     </div>
    </header>
 
@@ -84,10 +152,11 @@
     <table>
         <tr>
             <td id="td1">
-                <h2 style="color:turquoise; font-size: 50px;" >Turn Your house <br> into a home</h2>
+               <h2 style="color:turquoise; font-size: 50px;" >Turn Your house <br> into a home</h2>
         <p style="font-size: 30px;">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rerum molestiae nulla alias animi labore eos quidem expedita itaque rem, impedit vel nesciunt totam aspernatur porro optio laborum officia ut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo sit. Dolor amet atque voluptate consequuntur, sequi eligendi, enim officiis repudiandae ut corrupti laborum vel impedit, nulla doloremque placeat autem!
         </p>
+       
             </td>
             <td id="td2">
                 <h3 style="font-size: 50px;">Interior Designing</h3>
@@ -108,8 +177,70 @@
 
    <!-- third part -->
    <section id="sec1">
-    <h1 style="font-size: 50px;"><b>Our  Design creativity</b></h1>
+    <h1 style="font-size: 70px; padding-left: 50px;"><b>Our  Design creativity</b></h1>
+    <table id="tab2">
+        <tr>
+            <td id="td3">
+                <p>overview</p>
+            </td>
+            <td id="td3">
+                <p>founder</p> 
+            </td>
+            <td id="td3">
+                <p>Mission</p>
+            </td>
+        </tr>
+        <tr>
+            <td id="td4" colspan="3">
+                <p style="font-size: xx-large;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis animi cum nisi, libero expedita voluptatum itaque qui perspiciatis quaerat fuga dolores quae dignissimos. Non vel voluptatum possimus hic ducimus.
+                </p> 
+                <p style="color:rgb(105, 205, 223); font-size: 30px;">
+                    sample text: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto hic aperiam quam porro, quia mollitia, eum animi magni vitae sunt consequatur alias quaerat vel eaque excepturi natus tenetur minima atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti commodi, et quaerat possimus quidem eos provident hic aperiam, impedit harum assumenda esse voluptate nobis quo cum! Obcaecati maiores inventore odit.
+                </p>
+                <p style="font-size: 30px;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque exercitationem molestiae eos perspiciatis perferendis id magni blanditiis. Numquam dolorum corporis assumenda nihil quos ducimus recusandae dolor sint? Perferendis, rem minus.
+                </p>
+            </td>
+        </tr>
+    </table>
 
+   </section>
+
+
+
+    <!-- /* fourth part  */ -->
+
+   <section id="sec2">
+    <table style="margin-left: 100px;margin-top:100px;  ">
+        <tr>
+            <td id="td5">
+                <img style="height: 400px; width: 400px;"src="/sofa1.jpg" alt="">
+            </td>
+                
+            <td id="td6">
+                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 40px;">BLUE SOFA</h1>
+                <p style="font-size: 30px; ;">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae distinctio nam delectus, explicabo 
+                </p>
+                <button id="but" >ADD TO CART</button>
+            </td>
+
+            <td id="td5">
+                <img style="height: 400px; width: 400px;" src="/sofa2.jpg" alt="">
+            </td>
+                
+            <td id="td6" >
+                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 40px;" >VINATGE SOFA</h1>
+                <p style="font-size: 30px;">
+                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, veniam praesentium! Tenetur, harum. Consequatur minima 
+                </p>
+                <button id="but" >ADD TO CART</button>
+            </td>
+
+           
+        </tr>
+    </table>
    </section>
 </body>
 </html>
