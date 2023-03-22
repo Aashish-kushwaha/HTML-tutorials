@@ -6,30 +6,104 @@
 </head>
 <style>
     input {
-        margin: 10px;
+        border-style: none;
+        outline: none;
+        flex-shrink: 1;
+        font-size: 20px;
+    
     }
+
+    form{
+        border:2px solid rgb(248, 215, 250);
+        width: 1000px;
+        margin-left:500px;
+        background-color: rgb(229, 250, 215);
+        border-radius: 50px;
+        padding-top: 20px;
+    }
+    #div1{
+        margin-left: 60px;
+        margin-right: 60px;
+        /* border: 1px solid black; */
+        height: 100px;
+        border-radius: 20px;
+        background-color: white;
+        padding-left: 20px;
+        padding-top: 5px;
+        font-size: 30px;
+        padding-right: 20px;
+        vertical-align:middle;
+        
+        
+    }
+
+
 </style>
-<center>
-    <body>
-        <h1>Employee Registration Form</h1>
-        <form name="frmDataEntry" action="Processing.html" method="GET">
-            <label for="name">Full Name:</label>
-            <input type="text" placeholder="Enter Your full name" maxlength="35" value="" required />
+
+    <body style="background-color: rgba(170, 241, 135, 0.485); ">
+        
+        <h1  style=" border: 2px solid white; width:1000px; margin-left:500px; border-radius: 50px; height: 150px; font-size: 60px; line-height: 130px; background-color: white;" align="center">Employee Registration Form</h1>
+        <br>
+        <br>
+        <br>
+
+        <form align="center" name="frmDataEntry" action="Processing.html" method="GET">
+
+            <div  align="left" id="div1" >
+            <label for="name">Full Name:</label><br>
+            <input  type="text" placeholder="Enter Your full name" 
+            maxlength="35" value="" required />
+            <hr>
+            </div>
+            
+
+
+
             <br>
-            <label for="Usename">Username:</label>
-            <input type="text" placeholder="Enter Your Username" maxlength="35" value="" required />
+            <div align="left" id="div1">
+                <label for="Usename">Username:</label>
+                <br>
+                <input type="text" placeholder="Enter Your Username" maxlength="35" value="" required />
+                <hr>
+            </div>
+
+
             <br>
+
+           <div  align="left" id="div1">
             <label for="Password">Password:</label>
-            <input type="password" placeholder="**********" maxlength="35" value="" required />
             <br>
-            <label for="FatherName">Father's Name:</label>
+            <input type="password" placeholder="Enter Your Password" maxlength="35" value="" required />
+            <hr>
+           </div>
+            <br>
+
+
+            <div  align="left" id="div1">
+                <label for="FatherName">Father's Name:</label>
+                <br>
+
             <input type="text" placeholder="Enter Your Father's Name" maxlength="35" value="" required />
+            <hr>
+            </div>
             <br>
+            <div  align="left" id="div1">
+            
             <label for="MotherName">Mother's Name:</label>
-            <input type="text" placeholder="Enter Your Mother's Name" maxlength="35" value="" required />
             <br>
-            <label for="name">Univeristy Overall CGPA:</label>
-            <input type="number" placeholder="Enter Your Overalll CGPA" maxlength="5" value="" required />
+            <input type="text" placeholder="Enter Your Mother's Name" maxlength="35" value="" required />
+            <hr>
+        </div>
+
+            <br>
+
+            <div  align="left" id="div1">
+                <label for="name">Univeristy Overall CGPA:</label>
+                <br>
+                <input type="number" placeholder="Enter Your Overalll CGPA" maxlength="5" value="" required />
+                <hr>
+            </div>
+
             <br>
             <label for="name">High School %:</label>
             <input type="number" placeholder="Enter Your High School%" maxlength="5" value="" required />
@@ -67,7 +141,9 @@
             <br>
             <input type="submit" value="Register"> <br><br><br><br>
         </form>
+
+    
     </body>
-</center>
+
 
 </html>
