@@ -4,6 +4,7 @@ header{
     background-image: url(/bookstore/images/header1.jpg);
     text-align: center;
     vertical-align: top;
+    border: 1px solid black;
    
     
 }
@@ -22,6 +23,8 @@ header{
 body{
     margin:0px;
     padding: 0px;
+    display:flexbox;
+    
 }
 .subheading{
 
@@ -53,20 +56,19 @@ a:link{
     
 }
 
-aside{
+.div1{
     height: 500px;
     width: 300px;
     border: 1px solid black;
 }
 
-section{
+.div2{
     margin: 0;
     border: 1px solid black;
     height: 500px ;
-    width:140px
+    width:1400px
 
-}
-aside,section{
+}.div1,.div2{
     display: inline-block;
 }
 
