@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yahoobaba</title>
+    <style>
+        /* border */
+        h1{
+            border-width: 10px;
+            border-color: green;
+            border-style: double dotted dashed solid;  /*top right bottom left*/
+            border-radius: 10px;
+
+
+            /* shorthand
+            border: 1px solid black
+             */
+        }
+
+        /* outline: it comes before border(used when we give double border with different color) */
+        #p1{
+            border: 1px solid red;
+
+            outline-width: 2px;
+            outline-style: solid;
+            outline-color: green;
+            outline-offset: 5px;  /*didtance between border and outline*/
+
+
+            /* shorthand
+            outline: 2px solid black */
+        }
+
+        /* padding */
+        #div1{
+            border: 2px solid black;
+            padding-top: 50px;
+            padding-right:10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+
+            /* shorthand
+            padding: top right bottom left */
+        }
+
+        /* margin */
+        #div2{
+            border: 1px solid red;;
+            margin-left:50px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-right: 50px;
+
+            /* margin:auto      center of box*/
+        }
+
+        /* box sizing */
+        #div3{
+            border: 10px solid black;
+            padding: 10px 200px 60px 50px;
+            width: 500px;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        /* overflow */
+        #div4{
+            height: 250px;
+            width: 240px;
+            border: 2px solid black;
+            
+            /* overflow properties
+            overflow
+            overflow-x
+            overflow-y
+             */
+
+             /* values:scroll
+                       :auto 
+                       :hidden 
+                       :visible(default)
+             */
+
+             overflow:scroll;
+
+        }
+
+        /* box shadow */
+        #box{
+
+            /* box-shadow:h-offset(+ve for right side and -ve for left side) v-offset(+ve for bottom side and -ve for top side) blur spread color  ; */
+
+            /* we can give multiple shadow */
+            height: 200px;
+            width: 250px;
+            border: 2px solid red;
+            box-shadow: -10px  8px 4px  5px black;
+
+            /* to put shadow inside the box
+            box-shadow: -10px  8px 4px  5px black inset;
+
+             */
+        }
+
+        /* float */
+        #div5{
+            border: 1px solid black;
+            width:200px;
+            float:left;
+           
+        }
+
+        #div6{
+            clear: left;
+            /* border: 1px solid black; */
+        
+            /* float:left; */
+           
+            
+            
+        }
+        /* #div7{
+            border: 1px solid black;
+            
+        } */
+        
+
+    </style>
+</head>
+<body>
+    <!-- border -->
+    <h1>
+        yahoo baba
+    </h1>
+
+    <!-- outline -->
+    <p id="p1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo hic quis provident vitae similique recusandae accusantium, corporis nobis odit totam error placeat ducimus aut, ipsam aspernatur fugiat architecto cumque eveniet.
+    </p>
+
+    <!-- padding -->
+    <div id="div1">z
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui molestiae impedit dolore expedita tempora nulla, quam recusandae. Placeat in modi, maxime dolores officia deserunt, voluptatibus obcaecati, quidem at id sint?
+    </div>
+
+    <!-- margin -->
+    <div id="div2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore necessitatibus quaerat enim, nisi odio iusto fugit ipsum aperiam ratione asperiores explicabo blanditiis dolores amet, illo, consequuntur rem quae eaque officiis!
+    </div>
+
+    <!-- box sizing -->
+    <div id="div3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tenetur accusamus ducimus quisquam sunt? Cumque laboriosam molestias perspiciatis eligendi? Eos enim quod ipsa molestias rem sit beatae facere, architecto explicabo.
+    </div>
+
+    <!-- overflow -->
+    <div id="div4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste dolorum nobis debitis adipisci aperiam veritatis est officia? Quos, voluptates? Nobis aliquam inventore iste asperiores debitis distinctio quibusdam libero <blanditiis class="lorem"></blanditiis> maxime ipsam dolore, nulla sed fugit voluptas ullam modi provident laudantium perspiciatis deserunt ipsa id ad facere voluptatibus deleniti.
+    </div>
+    <!-- fbox shadow -->
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis est delectus culpa, cupiditate autem molestias debitis perferendis tempore voluptas minima corporis omnis placeat in, nemo mollitia non illo sint.
+    </div>
+
+    <br>
+    <br>
+
+    <div id="div5">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores illo quos dolorum alias! Ipsam corporis earum provident fugit mollitia illo, sit dolore natus voluptatum. Aut eveniet ipsam corporis officiis debitis.
+
+    </div>
+    <div id="div6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, vero blanditiis a incidunt, minus architecto enim cumque quod recusandae asperiores maiores aperiam magni, praesentium illo magnam doloremque sunt quaerat voluptate.
+
+    </div>
+    <div id="div7">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, omnis. Reiciendis vel itaque tenetur, accusamus corporis expedita. Ipsam, aspernatur tempora. Accusamus obcaecati labore, aliquid temporibus architecto maiores maxime nam veritatis.</p>
+    </div>
+
+
+</body>
+</html>

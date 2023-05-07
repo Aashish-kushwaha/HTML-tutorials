@@ -1,0 +1,1 @@
+document.getElementById("hi").setAttribute("class","abc");
